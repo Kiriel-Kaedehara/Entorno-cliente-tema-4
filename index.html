@@ -148,10 +148,10 @@
             let n1 = getNumero1();
             let i = 1;
             if (n1 < 1) {
-                resultado.innerHTML = `No se realizan iteraciones para números menores que 1.`;
+                resultado.innerHTML = `<strong>Bucle Do-While (Texto):</strong> <br>No se realizan iteraciones para números menores que 1.`;
                 return;
             }
-            resultado.innerHTML = `<strong>Bucle Do-While (Texto):</strong>`;
+            
             do {
                 resultado.innerHTML += `<br>Iteración número: ${i}`;
                 i++;
@@ -187,10 +187,10 @@
             let n1 = getNumero1();
             let i = 1;
             if (n1 < 1) {
-                resultado.innerHTML = `No se realizan iteraciones para números menores que 1.`;
+                resultado.innerHTML = `<strong>Bucle Do-While (Badge):</strong> <br>No se realizan iteraciones para números menores que 1.`;
                 return;
             }
-            resultado.innerHTML = `<strong>Bucle Do-While (Badge):</strong><br>`;
+
             do {
                 resultado.innerHTML += `<span class="badge bg-secondary me-1">${i}</span>`;
                 i++;
