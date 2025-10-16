@@ -126,6 +126,9 @@
             for (let i = 1; i <= n1; i++) {
                 resultado.innerHTML += `<br>Iteración número: ${i}`;
             }
+            if (n1 < 1) {
+                resultado.innerHTML += `<br>No se realizan iteraciones para números menores que 1.`;
+            }
         }
 
         function Wbucle() {
@@ -135,6 +138,9 @@
             while (i <= n1) {
                 resultado.innerHTML += `<br>Iteración número: ${i}`;
                 i++;
+            }
+            if (n1 < 1) {
+                resultado.innerHTML += `<br>No se realizan iteraciones para números menores que 1.`;
             }
         }
 
@@ -146,6 +152,9 @@
                 resultado.innerHTML += `<br>Iteración número: ${i}`;
                 i++;
             } while (i <= n1);
+            if (n1 < 1) {
+                resultado.innerHTML += `<br>No se realizan iteraciones para números menores que 1.`;
+            }
         }
 
         function FbucleB() {
@@ -153,6 +162,9 @@
             resultado.innerHTML = `<strong>Bucle For (Badge):</strong><br>`;
             for (let i = 1; i <= n1; i++) {
                 resultado.innerHTML += `<span class="badge bg-secondary me-1">${i}</span>`;
+            }
+            if (n1 < 1) {
+                resultado.innerHTML += `No se realizan iteraciones para números menores que 1.`;
             }
         }
 
@@ -164,6 +176,9 @@
                 resultado.innerHTML += `<span class="badge bg-secondary me-1">${i}</span>`;
                 i++;
             }
+            if (n1 < 1) {
+                resultado.innerHTML += `No se realizan iteraciones para números menores que 1.`;
+            }
         }
 
         function DWbucleB() {
@@ -174,6 +189,7 @@
                 resultado.innerHTML += `<span class="badge bg-secondary me-1">${i}</span>`;
                 i++;
             } while (i <= n1);
+            
         }
 
         function primo() {
