@@ -147,14 +147,16 @@
         function DWbucle() {
             let n1 = getNumero1();
             let i = 1;
+            if (n1 < 1) {
+                resultado.innerHTML = `No se realizan iteraciones para números menores que 1.`;
+                return;
+            }
             resultado.innerHTML = `<strong>Bucle Do-While (Texto):</strong>`;
             do {
                 resultado.innerHTML += `<br>Iteración número: ${i}`;
                 i++;
             } while (i <= n1);
-            if (n1 < 1) {
-                resultado.innerHTML += `<br>No se realizan iteraciones para números menores que 1.`;
-            }
+            
         }
 
         function FbucleB() {
