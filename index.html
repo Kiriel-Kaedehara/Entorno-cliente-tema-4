@@ -184,6 +184,10 @@
         function DWbucleB() {
             let n1 = getNumero1();
             let i = 1;
+            if (n1 < 1) {
+                resultado.innerHTML = `No se realizan iteraciones para números menores que 1.`;
+                return;
+            }
             resultado.innerHTML = `<strong>Bucle Do-While (Badge):</strong><br>`;
             do {
                 resultado.innerHTML += `<span class="badge bg-secondary me-1">${i}</span>`;
